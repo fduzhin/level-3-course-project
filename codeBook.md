@@ -4,7 +4,7 @@ Getting and Cleaning Data: Course Project
 Summary of the data and the project's objective:
 -----------------------------------------------
 
-There are two directories - test and train, similarly structured. The sets of data from the two directories are supposed to be merged. The sub-directory "Interial Signals" in both cases contains the (almost) raw measurements from the accelerometer and the gyriscope. 
+There are two directories - `test` and `train`, similarly structured. The sets of data from the two directories are supposed to be merged. The sub-directory `Interial Signals` in both cases contains the (almost) raw measurements from the accelerometer and the gyriscope. 
 
 There are nine raw measurements:
  1. body_acc_x
@@ -19,9 +19,9 @@ There are nine raw measurements:
 
 Among these, the total_acc and the body_gyro sets are measured directly. Then total_acc is expressed as a sum: total_acc=body_acc+gravity_acc (using some clever technique).
 
-The files X_train.txt and X_test.txt are the interesting data sets - those obtained from the raw measurements by the study's authors. We are supposed to extract info from X_train.txt and X_test.txt.
+The files `X_train.txt` and `X_test.txt` are the interesting data sets - those obtained from the raw measurements by the study's authors. We are supposed to extract info from `X_train.txt` and `X_test.txt`.
 
-The files X_train.txt and X_test.txt contain thousands of measurements of 561 variables. Of those 561 variables, we are interested in mean and standard deviation of the nine raw measurements. Thus we need 18 variables:
+The files `X_train.txt` and `X_test.txt` contain thousands of measurements of 561 variables. Of those 561 variables, we are interested in mean and standard deviation of the nine raw measurements. Thus we need 18 variables:
 
  1. tBodyAcc-mean()-X
  2. tBodyAcc-mean()-Y
@@ -46,10 +46,10 @@ Description of the analysis to produce the first tidy data set:
 ---------------------------------------------------------------
 
 First, we read all the raw data from the files 
- * "./dataset/train/subject_train.txt"
- * "./dataset/train/y_train.txt"
- * "./dataset/test/subject_test.txt"
- * "./dataset/test/y_test.txt"
+ * `./dataset/train/subject_train.txt`
+ * `./dataset/train/y_train.txt`
+ * `./dataset/test/subject_test.txt`
+ * `./dataset/test/y_test.txt`
 
 Then we create the main data frame **DF** by merging the subject info, the activity info, and the subset of the main data containing the following columns: 1,2,3,4,5,6,41,42,43,44,45,46,121,122,123,124,125,126 (these are the 18 variables we are supposed to extract according to the project's description).
 
