@@ -1,7 +1,7 @@
 Repo description:
 ======================
 
-Data Science track on Coursera, level 3 - Getting and Cleaning Data. The repo contains the initial data, the R script to perform the analysys, the description of the analysis, and the final result.
+Data Science track on Coursera, level 3 - Getting and Cleaning Data. The repo contains the R script to perform the analysys, the description of the analysis, and the final result.
 
 
 What is here:
